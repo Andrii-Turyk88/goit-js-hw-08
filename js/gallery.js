@@ -95,8 +95,10 @@ gallery.addEventListener("click", (event) => {
   const largeImageURL = event.target.dataset.source;
 
   const instance = basicLightbox.create(`
-    <img src="${largeImageURL}" width="800" height="600">
-  `);
+  <img src="" alt="" />
+`);
 
+  const img = instance.element().querySelector("img");
+  img.src = largeImageURL;
   instance.show();
 });

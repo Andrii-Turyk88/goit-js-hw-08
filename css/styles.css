@@ -16,7 +16,7 @@ body {
 
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
 
   max-width: 1128px;
   margin-left: auto;
